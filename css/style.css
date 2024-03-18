@@ -49,7 +49,7 @@ header{
 
 /*メイン*/
 #hero {
-    background-image: url("/images/47689.jpg");
+    background-image: url("./images/47689.jpg");
     background-position: center;
     background-size: cover;
     height: 840px;
