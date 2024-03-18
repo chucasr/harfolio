@@ -288,7 +288,7 @@ header{
     margin-left: 30px;
 }
     #hero {
-    background-image: url("https://github.com/chucasr/harfolio/blob/main/images/47689.jpg?raw=true");
+    background-image: url("../images/47689.jpg");
     background-position: center;
     background-size: cover;
     height: 440px;
@@ -466,3 +466,118 @@ header{
   }
 
   
+    
+    
+    
+/*    スマホ*/
+    @media (max-width: 420px) {
+  .container {
+    width: 90%;
+  }
+        
+        .header_menu li {
+    margin-left: 10px;
+}
+  .hero_inner p {
+    font-size: 30px;
+  }
+
+  .hero_inner h1 {
+    font-size: 14px;
+  }
+    
+.image-container img{
+    width: 90%;
+    align-items: center;
+}
+    
+    .image-container img {
+    width: 100px; /* 画像の横幅を指定 */
+    height: 100px; /* 画像の縦幅を指定 */
+    border-radius: 50%; /* 正円にするための角の丸みを指定 */
+}
+
+    .overlay {
+    position: relative;
+    overflow: hidden; /* 画像の外側にはみ出た部分を隠す */
+    border-radius: 50%; /* 画像を正円にする */
+}
+
+.overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#F8809C;
+    border-radius: 50%; /* 画像と同じ円形 */
+    opacity: .4; /* 最初は非表示 */
+    transition: opacity 0.3s ease; /* 不透明度の変化をアニメーション化 */
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden; /* 画像の外側にはみ出た部分を隠す */
+    width: 100px; /* 画像の横幅を指定 */
+    height: 100px; /* 画像の縦幅を指定 */
+    border-radius: 50%; /* 画像を正円にする */
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0; /* 最初は非表示 */
+    transition: opacity 0.3s ease; /* 不透明度の変化をアニメーション化 */
+}
+
+.overlay:hover .overlay-content {
+    opacity: 1; /* ホバー時にコンテンツを表示 */
+}
+  .column-40 {
+    width: 40%;
+  }
+
+  .column-55 {
+    width: 55%;
+  }
+.column-55 p {
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 2;
+        
+}   
+
+  .title_SNS{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    margin-top: 170px;
+    text-align: center;
+    color: #F8809C;
+}
+
+
+.container1 {
+    width: 60%;
+    max-width: 1120px;
+    margin: 0 auto;
+    z-index: 2;
+    margin-bottom: 160px;
+}
+
+.overlay1 {
+    width: 50px; /* 画像の横幅を指定 */
+    height: 50px; /* 画像の縦幅を指定 */
+    border-radius: 50%; /* 画像を正円にする */
+    overflow: hidden; /* 画像の外側にはみ出た部分を隠す */
+     display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
